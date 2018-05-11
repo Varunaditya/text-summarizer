@@ -10,7 +10,7 @@ python3 textSummarizer.py sentences.txt
 
 The sentences are read from the file and networkx is used to make undirected graph of the words based on synsets, hyponyms and hypernyms. Later the connected components of the graph are used to build lexical chains and the longest chain is used to summarize text. The sentences that have words from the longest lexical chain are used in the text summary.
 
-### Orphan Pronoun
+## Orphan Pronouns
 To avoid the problem of orphan pronouns, every sentence that is followed by a sentence that has a pronoun is added in the text summary. The underlying assumption is that the every pronoun has its corresponding noun present in the sentence that precedes it.
 
 ## Libraries
