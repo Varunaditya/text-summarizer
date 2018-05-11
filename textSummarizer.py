@@ -70,7 +70,7 @@ def drawGraph(graph, wordCount):
 		labels[i] = i+'('+str(wordCount[i])+')'
 	plt.figure(figsize=(20,20))
 	nx.draw_networkx(graph,font_size=25,alpha=0.2, labels=labels, width=3)
-	plt.savefig('Jadwal - Lexical Chains.png')
+	plt.savefig('lexicalChains.png')
 
 def initiateLexicalChains(graph1):
 	#one of the two methods to create lexical chains
