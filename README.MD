@@ -3,6 +3,9 @@
 The program reads sentences from a file and creates lexical chains to summarize the text.
 The output is stored in 'summary.txt' along with a graphical representation of lexical chains in 'lexicalChains.png'.
 
+## Usage
+python3 textSummarizer.py sentences.txt
+
 ## How it works?
 
 The sentences are read from the file and networkx is used to make undirected graph of the words based on synsets, hyponyms and hypernyms. Later the connected components of the graph are used to build lexical chains and the longest chain is used to summarize text. The sentences that have words from the longest lexical chain are used in the text summary.
